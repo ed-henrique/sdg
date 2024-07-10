@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-  cpfs := pkg.CPFWithOptions(100, pkg.Options{ Format: true });
+	cpfs := pkg.CPF(100, pkg.WithFormat())
 
-  for _, c := range cpfs {
-    fmt.Println(c)
-  }
+	for _, c := range cpfs {
+		fmt.Println(c)
+	}
 }
